@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20)
+project(imr_core CXX)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+add_subdirectory(src)
+
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+install(DIRECTORY include/imr_core DESTINATION include)

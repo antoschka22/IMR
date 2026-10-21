@@ -1,5 +1,5 @@
 #include <iostream>
-#include "core.hpp"
+#include "imr_core/core.hpp"
 
 int main() {
     std::cout << imr_core::get_hello() << "\n";
