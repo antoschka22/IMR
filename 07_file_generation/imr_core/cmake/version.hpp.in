@@ -1,0 +1,8 @@
+#pragma once
+#include <string>
+
+namespace imr {
+inline std::string get_version_string() {
+    return "@PROJECT_VERSION@";
+}
+}
